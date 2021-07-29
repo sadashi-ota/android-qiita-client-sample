@@ -1,7 +1,8 @@
-package jp.sadashi.sample.client.qiita
+package jp.sadashi.sample.client.qiita.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import jp.sadashi.sample.client.qiita.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
