@@ -2,7 +2,7 @@
 
 このアプリケーションは「[Qiita API v2](https://qiita.com/api/v2/docs)」を利用したサンプルアプリケーションです
 
-## Licanse
+## License
 
 ```
 Copyright 2021 Sadashi Ota
