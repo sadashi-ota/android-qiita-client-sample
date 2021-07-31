@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface QiitaApiClient {
     @GET("/api/v2/tags")
-    fun getNovelDetail(
+    fun getTags(
         @Query("page") page: Int,
         @Query("per_page") per_page: Int,
         @Query("sort") sort: String,
