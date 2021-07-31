@@ -7,13 +7,22 @@
     tools:context=".ui.MainActivity">
 
     <Button
-        android:id="@+id/do_api"
+        android:id="@+id/get_tags"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Do API"
+        android:text="Get Tags"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/get_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Tag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/get_tags" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

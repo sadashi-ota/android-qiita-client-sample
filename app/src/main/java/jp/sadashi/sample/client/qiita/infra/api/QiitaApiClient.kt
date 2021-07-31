@@ -3,6 +3,7 @@ package jp.sadashi.sample.client.qiita.infra.api
 import io.reactivex.Single
 import jp.sadashi.sample.client.qiita.infra.json.Tag
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface QiitaApiClient {
@@ -12,4 +13,7 @@ interface QiitaApiClient {
         @Query("per_page") per_page: Int,
         @Query("sort") sort: String,
     ): Single<List<Tag>>
+
+    @GET("/api/v2/tags/{tag_id}")
+    fun getTag(@Path("tag_id") id: Int): Single<Tag>
 }
