@@ -9,11 +9,13 @@ class QiitaCachePreference(context: Context) {
 
     private val sharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
 
-    fun put(id: Int, tag: String) {
-        sharedPreferences.edit().putString(id.toString(), tag).apply()
+    fun put(id: String, tag: String) {
+        sharedPreferences.edit().putString(id, tag).apply()
     }
 
-    fun get(id: Int): String? = sharedPreferences.getString(id.toString(), "")
+    fun get(id: String): String? = sharedPreferences.getString(id, null)
 
-    fun delete(id: Int) = sharedPreferences.edit().remove(id.toString()).apply()
+    fun delete(id: String) = sharedPreferences.edit().remove(id).apply()
+
+    fun clear() = sharedPreferences.edit().clear().apply()
 }

@@ -15,5 +15,5 @@ interface QiitaApiClient {
     ): Single<List<Tag>>
 
     @GET("/api/v2/tags/{tag_id}")
-    fun getTag(@Path("tag_id") id: Int): Single<Tag>
+    fun getTag(@Path("tag_id") id: String): Single<Tag>
 }
